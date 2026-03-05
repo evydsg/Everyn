@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- S-01 Splash Launch Screen Light warm background with centered wordmark, slogan, CTA button and sign-in link  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/bg_light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Invisible guideline at 50% vertical
+    Used to anchor the button group to screen center -->
+    <androidx.constraintlayout.widget.Guideline
+       android:id="@+id/guidelineCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+    <TextView
+        android:id="@+id/tvStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textSize="48sp"
+        android:textColor="@color/gold_core"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/tvWordmark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+    />
+
+    <!-- ── Everyn wordmark ──────────────────────────────────
+      Cormorant Garamond Regular, anchored just above
+      the vertical center guideline                      -->
+    <TextView
+        android:id="@+id/tvWordmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Everyn"
+        android:textSize="52sp"
+        android:textColor="@color/text_primary"
+        android:fontFamily="@font/cormorant_garamond"
+        android:letterSpacing="0.02"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/tvSlogan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ── Slogan ───────────────────────────────────────────
+         Italic gold text, sits just above center guideline -->
+    <TextView
+        android:id="@+id/tvSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slogan"
+        android:textSize="16sp"
+        android:textColor="@color/gold_core"
+        android:fontFamily="@font/cormorant_garamond_italic"
+        android:letterSpacing="0.02"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@id/btnGetStarted"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ── GET STARTED button ───────────────────────────────
+         Full-width pill button, anchored to center line    -->
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:text="@string/get_started"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/outfit"
+        android:letterSpacing="0.12"
+        android:backgroundTint="@drawable/bg_btn_gold"
+        android:background="@drawable/bg_btn_gold"
+        android:stateListAnimator="@null"
+        app:layout_constraintTop_toTopOf="@id/guidelineCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp" />
+
+    <!-- ── Already have an account? Sign in ────────────────
+         Styled via SpannableString in SplashActivity.kt   -->
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signin_prompt"
+        android:textSize="13sp"
+        android:textColor="@color/text_dim"
+        android:fontFamily="@font/outfit"
+        app:layout_constraintTop_toBottomOf="@id/btnGetStarted"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

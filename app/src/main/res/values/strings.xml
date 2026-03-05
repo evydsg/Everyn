@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- App
+    The app name shown in the launcher -->
+    <string name="app_name">Everyn</string>
+
+    <!-- Splash Screen
+    Slogan displayed under the wordmark
+    Sign-in prompt at the bottom of the screen -->
+    <string name="slogan">dressed like you meant it</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="signin_prompt">Already have an account? Sign in</string>
+</resources>

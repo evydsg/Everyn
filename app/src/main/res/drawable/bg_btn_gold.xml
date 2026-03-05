@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pill-shaped gold button background
+    Default : solid gold(#C9A050)
+    Pressed : slightly darker gold to give tactile feedback -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Pressed state
+    Darkens slightly when the user taps the button -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gold_muted"/>
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+
+    <!--Default state
+    Full gold, fully rounded (pill shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/gold_core"/>
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+
+</selector>

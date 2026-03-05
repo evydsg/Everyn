@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Backgrounds
+    bg_light : used on splash + light mode screens
+    bg_dark : main app background (dark mode)
+    bg_surface : cards, panels, bottom sheets
+    bg_raised : elevated surfaces, dropdowns
+    -->
+    <color name="bg_light">#F2F0ED</color>
+    <color name="bg_dark">#080706</color>
+    <color name="bg_surface">#201D1A</color>
+    <color name="bg_raised">#2A2520</color>
+
+    <!-- Gold Primary Accent
+    gold_core : buttons, prices, active icons
+    gold_bright : highlighted states, expanded cards
+    gold_muted : borders, secondary gold elements
+    gold_deep : gold backgrounds, subtle tints
+    -->
+    <color name="gold_core">#C9A050</color>
+    <color name="gold_bright">#E2B96A</color>
+    <color name="gold_muted">#A07B38</color>
+    <color name="gold_deep">#6B5020</color>
+
+    <!-- Burgundy - Secondary Accent
+    Used sparingly: destructive actions, special tags -->
+    <color name="burgundy_core">#8B1A34</color>
+    <color name="burgundy_light">#C24B6A</color>
+
+    <!-- Text
+    text_primary : headings, item names, key info
+    text_secondary : body text, descriptions
+    text_dim : labels, metada, placeholders -->
+    <color name="text_primary">#1A1612</color>
+    <color name="text_secondary">#A89880</color>
+    <color name="text_dim">#6B5C48</color>
+
+    <!-- System
+    Used for button text, icon tints -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
