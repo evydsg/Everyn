@@ -7,7 +7,7 @@
     android:background="@color/bg_light"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SplashActivity">
 
     <!-- Invisible guideline at 50% vertical
     Used to anchor the button group to screen center -->
@@ -76,7 +76,6 @@
         android:textColor="@color/white"
         android:fontFamily="@font/outfit"
         android:letterSpacing="0.12"
-        android:backgroundTint="@drawable/bg_btn_gold"
         android:background="@drawable/bg_btn_gold"
         android:stateListAnimator="@null"
         app:layout_constraintTop_toTopOf="@id/guidelineCenter"

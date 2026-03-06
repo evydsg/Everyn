@@ -3,6 +3,10 @@
     <style name="Base.Theme.Everyn" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">@color/gold_core</item>
+        <item name="colorPrimaryVariant">@color/gold_muted</item>
+        <item name="colorOnPrimary">@color/white</item>
     </style>
 
     <style name="Theme.Everyn" parent="Base.Theme.Everyn" />
