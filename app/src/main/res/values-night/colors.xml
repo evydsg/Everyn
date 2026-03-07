@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Semantic Colors (Dark Mode) -->
+
+    <color name="colorBackground">#080706</color>
+    <color name="colorSurface">#201D1A</color>
+    <color name="colorTextPrimary">#F4EDE0</color>
+    <color name="colorTextDim">#6B5C48</color>
+    <color name="colorAccentGold">#C9A050</color>
+
+</resources>

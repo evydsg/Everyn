@@ -53,7 +53,7 @@ class SplashActivity : AppCompatActivity() {
                 }
 
                 override fun updateDrawState(ds: TextPaint) {
-                    ds.color = ContextCompat.getColor(this@SplashActivity, R.color.gold_core)
+                    ds.color = ContextCompat.getColor(this@SplashActivity, R.color.colorAccentGold)
                     ds.isUnderlineText = true
                 }
             },

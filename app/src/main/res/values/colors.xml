@@ -40,4 +40,16 @@
     Used for button text, icon tints -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- ── Semantic Colors (Light Mode) ─────────────────────
+        These are the names used in layouts and drawables.
+        Android automatically swaps them for the night
+        versions when the system is in dark mode.          -->
+    <color name="colorBackground">#F2F0ED</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorTextPrimary">#1A1612</color>
+    <color name="colorTextDim">#6B5C48</color>
+    <color name="colorAccentGold">#C9A050</color>
+
+
 </resources>

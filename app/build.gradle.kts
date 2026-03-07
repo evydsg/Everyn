@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.everyn"
-    compileSdk = 36
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.everyn"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -25,11 +25,12 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
 
     buildFeatures{
         viewBinding = true
     }
-    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
