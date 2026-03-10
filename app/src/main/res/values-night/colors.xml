@@ -7,5 +7,7 @@
     <color name="colorTextPrimary">#F4EDE0</color>
     <color name="colorTextDim">#6B5C48</color>
     <color name="colorAccentGold">#C9A050</color>
+    <color name="colorDashInactive">#3A3A3A</color>
+    <color name="colorGold">#E2B96A</color>
 
 </resources>

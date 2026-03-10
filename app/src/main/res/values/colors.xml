@@ -50,6 +50,8 @@
     <color name="colorTextPrimary">#1A1612</color>
     <color name="colorTextDim">#6B5C48</color>
     <color name="colorAccentGold">#C9A050</color>
+    <color name="colorGold">#E2B96A</color>
+    <color name="colorDashInactive">#CCCCCC</color>
 
 
 </resources>
