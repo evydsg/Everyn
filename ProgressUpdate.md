@@ -20,3 +20,13 @@ Began implementation of the 3-slide onboarding flow.
 - Currently refining the progress dash indicator row — working through active/inactive color values for light (`#CCCCCC`) and dark mode (`#3A3A3A`)
 
 **Status:** In progress
+
+### Session — March 12, 2026
+
+Continued implementation of the 3-slide onboarding flow.
+
+- Created `activity_onboarding.xml` as the ViewPager2 host screen
+- Started `fragment_onboarding.xml` as the reusable slide template — covers heading, body copy, gold pill CTA, and skip link
+- Currently refining the progress dash indicator row — working through active/inactive color values for light (`#CCCCCC`) and dark mode (`#3A3A3A`)
+
+**Status:** In progress
