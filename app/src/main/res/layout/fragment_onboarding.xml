@@ -81,4 +81,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
+    <!-- CTA Button -->
+    <Button
+        android:id="@+id/onboardingCTA"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:background="@drawable/bg_button_gold_pill"
+        android:fontFamily="@font/outfit"
+        android:textSize="12dp"
+        android:letterSpacing="0.12"
+        android:textColor="@color/colorButtonText"
+        android:layout_marginBottom="12dp"
+        android:layout_constraintBottom_toTopOf="@id/onboardingSkip"
+        android:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!--Skip Link -->
+    <TextView
+        android:id="@+id/onboardingSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip_for_now"
+        android:fontFamily="@font/outfit"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="40dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

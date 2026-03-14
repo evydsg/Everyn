@@ -10,4 +10,21 @@
     <string name="slogan">dressed like you meant it</string>
     <string name="get_started">GET STARTED</string>
     <string name="signin_prompt">Already have an account? Sign in</string>
+
+    <!--Onboarding Screens -->
+    <string name="skip_for_now">Skip for now</string>
+    <string name="onboarding_cta_continue">CONTINUE</string>
+    <string name="onboarding_cta_create">CREATE AN ACCOUNT →</string>
+
+    <!-- Slide 1 -->
+    <string name="onboarding_1_heading">Add items from anywhere</string>
+    <string name="onboarding_1_body">Paste any product link, from Stay Positive Store, H&amp;M, Quince, or anywhere online. Everyn reads the details automatically.\n\nNo more screenshots. No more \"where did I see that?\"</string>
+
+    <!-- Slide 2 -->
+    <string name="onboarding_2_heading">Build outfits from what you own</string>
+    <string name="onboarding_2_body">Tap pieces from your wardrobe to assemble looks. Everyn scores each combination and tells you why it works, so every outfit feels intentional.</string>
+
+    <!-- Slide 3 -->
+    <string name="onboarding_3_heading">AI finds what you\'re missing</string>
+    <string name="onboarding_3_body">Tell Everyn what you need. It searches for pieces that fit your existing wardrobe, filtered by material and budget. Luxury taste, every budget.</string>
 </resources>
