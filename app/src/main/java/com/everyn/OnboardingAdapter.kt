@@ -7,7 +7,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 class OnboardingAdapter(activity: FragmentActivity) : FragmentStateAdapter(activity) {
 
     //Total number of onboarding slides
-    override fun getItem() : Int = 3
+    override fun getItemCount() : Int = 3
 
     //Returns the correct fragment for each slide position
     override fun createFragment(position: Int): Fragment {
