@@ -1,5 +1,6 @@
 package com.everyn
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.Spanned
@@ -78,7 +79,9 @@ class SplashActivity : AppCompatActivity() {
     //Navigation
     private fun onGetStartedClicked()
     {
-        //Add code to screen
+       val intent = Intent(this, OnboardingActivity :: class.java)
+        startActivity(intent)
+        finish()
     }
     private fun onSignInClicked()
     {

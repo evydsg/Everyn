@@ -52,6 +52,7 @@
     <color name="colorAccentGold">#C9A050</color>
     <color name="colorGold">#E2B96A</color>
     <color name="colorDashInactive">#CCCCCC</color>
+    <color name="colorButtonText">#FFFFFFFF</color>
 
 
 </resources>

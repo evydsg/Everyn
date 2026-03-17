@@ -31,3 +31,16 @@ Continued S-02 implementation, working through Kotlin files one at a time.
 - Created `OnboardingFragment.kt` — reusable fragment driven by slide index; populates heading, body, and CTA label from strings; progress dash logic updates active/inactive colors per slide; CTA and skip callbacks delegate to host activity
 
 **Status:** In progress — `OnboardingActivity.kt` next
+
+### Session — March 17, 2026
+
+**Onboarding Flow (S-02) — Complete**
+
+Finished S-02 implementation and resolved layout bugs during testing.
+
+- Created `OnboardingActivity.kt` — wires `OnboardingAdapter` to ViewPager2, disables swipe, handles `onCtaClicked` and `onSkipClicked` callbacks, navigates to account creation on completion
+- Registered `OnboardingActivity` in `AndroidManifest.xml`
+- Fixed `fragment_onboarding.xml` bugs: `dash3` height corrected to `3dp`, CTA id cased to `onboardingCta`, button constraints moved to `app:` namespace, `textSize` corrected from `dp` to `sp`, skip link `constraintStart` fixed to `parent`
+- Fixed `activity_onboarding.xml`: added missing `app:layout_constraintStart_toStartOf="parent"` on ViewPager2 — required for `0dp` width to resolve correctly
+
+**Status:** Complete

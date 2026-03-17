@@ -9,5 +9,6 @@
     <color name="colorAccentGold">#C9A050</color>
     <color name="colorDashInactive">#3A3A3A</color>
     <color name="colorGold">#E2B96A</color>
+    <color name="colorButtonText">#F4EDE0</color>
 
 </resources>
