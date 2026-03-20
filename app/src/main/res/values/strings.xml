@@ -27,4 +27,21 @@
     <!-- Slide 3 -->
     <string name="onboarding_3_heading">AI finds what you\'re missing</string>
     <string name="onboarding_3_body">Tell Everyn what you need. It searches for pieces that fit your existing wardrobe, filtered by material and budget. Luxury taste, every budget.</string>
+
+    <!--Create Account Screen -->
+    <string name="create_account_heading">Create account</string>
+    <string name="create_account_subtitle">Your wardrobe, waiting for you</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="or">or</string>
+    <string name="label_full_name">FULL NAME</string>
+    <string name="label_email">EMAIL</string>
+    <string name="label_password">PASSWORD</string>
+    <string name="label_confirm_password">Confirm your password</string>
+    <string name="hint_full_name">Enter your full name</string>
+    <string name="hint_email">Enter your email address</string>
+    <string name="hint_password">Min. 8 characters</string>
+    <string name="hint_confirm_password">Confirm your password</string>
+    <string name="create_account_cta">Create Account</string>
+    <string name="already_have_account">Already have an account?  Sign in</string>
+    <string name="terms_of_service">By creating an account you agree to our Terms of Service and Privacy Policy</string>
 </resources>

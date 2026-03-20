@@ -44,3 +44,17 @@ Finished S-02 implementation and resolved layout bugs during testing.
 - Fixed `activity_onboarding.xml`: added missing `app:layout_constraintStart_toStartOf="parent"` on ViewPager2 — required for `0dp` width to resolve correctly
 
 **Status:** Complete
+
+### Session — March 19, 2026
+
+**Create Account Screen (S-03) — In Progress**
+
+Started implementation of the Create Account screen.
+
+- Created `activity_create_account.xml` with ScrollView + ConstraintLayout host
+- Added heading (Cormorant Garamond, 44sp) and italic gold subtitle
+- Added "Continue with Google" gold pill button
+- Started "or" divider row — left line, center label, right line in progress
+- Added all required strings to `strings.xml`
+
+**Status:** In progress — divider, input fields, CTA, and footer links next
