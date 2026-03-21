@@ -58,3 +58,14 @@ Started implementation of the Create Account screen.
 - Added all required strings to `strings.xml`
 
 **Status:** In progress — divider, input fields, CTA, and footer links next
+
+### Session — March 20, 2026
+
+**Create Account Screen (S-03) — In Progress**
+
+Continued implementation of the Create Account screen.
+
+- Completed `activity_create_account.xml` — full layout with heading, italic gold subtitle, Google CTA, or divider, all four input fields, Create Account button, sign in link, and terms footer
+- Fixed 8 bugs caught during review: `app:` namespace typo on dividerOr, `android:font` → `android:fontFamily` across all labels and fields, `android:text` → `android:hint` on all EditTexts, `inputPassowrd` id typo, incorrect `inputType` on email/password fields, wrong namespace on tvSignIn constraint, cleaned up tvTerms stray attribute and added gravity center
+
+**Status:** In progress — `bg_input_field.xml` drawable and `AccountCreationActivity.kt` next
