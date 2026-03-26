@@ -54,6 +54,7 @@
     <color name="colorDashInactive">#CCCCCC</color>
     <color name="colorButtonText">#FFFFFFFF</color>
     <color name="colorTextSecondary">#E2B96A</color>
+    <color name="colorGoldMuted">#8C7B5A</color>
 
 
 </resources>

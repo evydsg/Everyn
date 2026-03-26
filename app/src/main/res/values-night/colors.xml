@@ -11,5 +11,6 @@
     <color name="colorGold">#E2B96A</color>
     <color name="colorButtonText">#F4EDE0</color>
     <color name="colorTextSecondary">#E2B96A</color>
+    <color name="colorGoldMuted">#6B5B3E</color>
 
 </resources>

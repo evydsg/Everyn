@@ -69,3 +69,14 @@ Continued implementation of the Create Account screen.
 - Fixed 8 bugs caught during review: `app:` namespace typo on dividerOr, `android:font` → `android:fontFamily` across all labels and fields, `android:text` → `android:hint` on all EditTexts, `inputPassowrd` id typo, incorrect `inputType` on email/password fields, wrong namespace on tvSignIn constraint, cleaned up tvTerms stray attribute and added gravity center
 
 **Status:** In progress — `bg_input_field.xml` drawable and `AccountCreationActivity.kt` next
+
+### Session — March 26, 2026
+
+**Create Account Screen (S-03) — In Progress**
+
+Continued implementation of the Create Account screen.
+
+- Added `colorSurface` and `colorGoldMuted` color tokens to both `values/colors.xml` and `values-night/colors.xml` — warm off-white/deep near-black for surface, desaturated gold for input borders
+- Created `bg_input_field.xml` — rounded rectangle drawable with muted gold stroke and `colorSurface` fill, applied to all four input fields
+
+**Status:** In progress — `AccountCreationActivity.kt` next; emulator split-screen issue ongoing
