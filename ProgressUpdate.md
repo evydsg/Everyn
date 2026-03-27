@@ -80,3 +80,15 @@ Continued implementation of the Create Account screen.
 - Created `bg_input_field.xml` — rounded rectangle drawable with muted gold stroke and `colorSurface` fill, applied to all four input fields
 
 **Status:** In progress — `AccountCreationActivity.kt` next; emulator split-screen issue ongoing
+
+### Session — March 27, 2026
+
+**Create Account Screen (S-03) — Completed**
+
+Finished implementation of the Create Account screen.
+
+- Completed `AccountCreationActivity.kt` — View Binding setup, click listeners for primary CTA,
+  Google Sign-In CTA, and sign-in link, and full local validation (name, username, email format,
+  password length); Firebase Auth stubbed with TODOs for next auth session
+
+**Status:** S-03 complete — Firebase Auth screens next
