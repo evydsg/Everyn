@@ -108,3 +108,18 @@ Configured Firebase in the project.
 - Resolved Kotlin metadata version mismatch by downgrading BOM from 34.11.0 to 32.8.1
 
 **Status:** Firebase setup complete — wiring Firebase Auth into `AccountCreationActivity.kt` next
+
+### Session — April 1, 2026 (continued)
+
+**Firebase Auth — AccountCreationActivity.kt Wired Up**
+
+Connected Firebase Auth to the Create Account screen.
+
+- Replaced stubbed `AccountCreationActivity.kt` with full Firebase Auth implementation
+- Wired `btnCreateAccount` to email/password account creation via `createUserWithEmailAndPassword`
+- Wired `btnGoogle` to Google Sign-In flow via `GoogleSignInClient` and `firebaseAuthWithGoogle`
+- Fixed `setContentView` to use `binding.root` instead of `R.layout.activity_create_account`
+- Fixed missing `.text` on password and confirm password fields in `validateInputs()` — was calling `toString()` on the EditText object directly
+- Validation covers: full name not empty, valid email format, password minimum 8 characters, passwords match
+
+**Status:** Firebase Auth wired to Create Account screen. Login screen next
