@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "640648578536",
+    "project_id": "everyn-927a5",
+    "storage_bucket": "everyn-927a5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640648578536:android:48ed0e412495a684e6d05d",
+        "android_client_info": {
+          "package_name": "com.everyn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640648578536-n66n6idig9j1m9q5hv4obt11eijsukjj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.everyn",
+            "certificate_hash": "b9377e1c3fca9c3c77fc5af7ac92e717c688caf9"
+          }
+        },
+        {
+          "client_id": "640648578536-9vi946lf15v7f64v9o7mojtpiqq7ashc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkDRtPHKsdHa0-Q27yzqi-7M2a6iGv51o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640648578536-9vi946lf15v7f64v9o7mojtpiqq7ashc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

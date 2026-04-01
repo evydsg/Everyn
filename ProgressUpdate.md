@@ -92,3 +92,19 @@ Finished implementation of the Create Account screen.
   password length); Firebase Auth stubbed with TODOs for next auth session
 
 **Status:** S-03 complete — Firebase Auth screens next
+
+### Session — April 1, 2026
+
+**Firebase Setup — Completed**
+
+Configured Firebase in the project.
+
+- Created Firebase project and registered the Android app in the Firebase console
+- Enabled Email/Password and Google Sign-In auth methods in Firebase Authentication
+- Generated SHA-1 and SHA-256 fingerprints via `./gradlew signingReport` and added them to Firebase
+- Downloaded and placed `google-services.json` in the `app/` directory
+- Added Google Services plugin to project-level `build.gradle.kts`
+- Added Firebase BOM (32.8.1), `firebase-auth`, and `play-services-auth` (20.7.0) to app-level `build.gradle.kts` — versions pinned for Kotlin 1.9.0 compatibility
+- Resolved Kotlin metadata version mismatch by downgrading BOM from 34.11.0 to 32.8.1
+
+**Status:** Firebase setup complete — wiring Firebase Auth into `AccountCreationActivity.kt` next
