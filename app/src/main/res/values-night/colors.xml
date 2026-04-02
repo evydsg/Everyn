@@ -3,7 +3,6 @@
     <!-- Semantic Colors (Dark Mode) -->
 
     <color name="colorBackground">#080706</color>
-    <color name="colorSurface">#201D1A</color>
     <color name="colorTextPrimary">#F4EDE0</color>
     <color name="colorTextDim">#6B5C48</color>
     <color name="colorAccentGold">#C9A050</color>
@@ -12,5 +11,6 @@
     <color name="colorButtonText">#F4EDE0</color>
     <color name="colorTextSecondary">#E2B96A</color>
     <color name="colorGoldMuted">#6B5B3E</color>
+    <color name="colorSurface">#FFFFFF</color>
 
 </resources>

@@ -109,7 +109,7 @@ Configured Firebase in the project.
 
 **Status:** Firebase setup complete — wiring Firebase Auth into `AccountCreationActivity.kt` next
 
-### Session — April 1, 2026 (continued)
+### Session II — April 1, 2026 (continued)
 
 **Firebase Auth — AccountCreationActivity.kt Wired Up**
 
@@ -123,3 +123,17 @@ Connected Firebase Auth to the Create Account screen.
 - Validation covers: full name not empty, valid email format, password minimum 8 characters, passwords match
 
 **Status:** Firebase Auth wired to Create Account screen. Login screen next
+
+### Session III — April 1, 2026
+
+**Login Screen (S-03 Login) — In Progress**
+
+Began implementation of the Login screen layout.
+
+- Created `activity_login.xml` — ScrollView > ConstraintLayout shell with full dark luxe styling
+- Added "Welcome back" heading (Cormorant Garamond, 40sp) with inline gold ★ icon aligned top-right
+- Added italic gold slogan ("Dressed like you meant it.") below heading
+- Added "Continue with Google" full-width gold pill button (56dp height, 28dp corner radius)
+- Added `or` divider row — `tvOr` centered between two `View` divider lines with 20% opacity; stopped here
+
+**Status:** In progress — EMAIL/PASSWORD fields, Forgot password link, Sign In button, and footer link remaining
