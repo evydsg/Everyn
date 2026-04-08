@@ -137,3 +137,13 @@ Began implementation of the Login screen layout.
 - Added `or` divider row — `tvOr` centered between two `View` divider lines with 20% opacity; stopped here
 
 **Status:** In progress — EMAIL/PASSWORD fields, Forgot password link, Sign In button, and footer link remaining
+
+
+### Session I — April 8, 2026
+
+**Login Screen (S-03 Login) — In Progress**
+- Added Email/PASSWORD Field
+
+**Status:** Forgot password link, Sign In button, and footer link remaining, fix input_field box
+
+
