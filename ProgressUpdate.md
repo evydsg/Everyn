@@ -146,4 +146,23 @@ Began implementation of the Login screen layout.
 
 **Status:** Forgot password link, Sign In button, and footer link remaining, fix input_field box
 
+### Session — April 9, 2026
 
+**Login Screen (S-03 Login) — In Progress**
+
+Completed `activity_login.xml` and resolved a build error.
+
+- Completed remaining layout elements: EMAIL/PASSWORD labels, input fields (reusing
+  `bg_input_field.xml`), "Forgot password?" right-aligned link, "Sign In" gold pill
+  button, and "Don't have an account? Create one" footer
+- Fixed duplicate class dex build error (`androidx.coordinatorlayout.R$attr defined
+  multiple times`) — caused by `constraintlayout 2.2.1` pulling a conflicting transitive
+  dependency; resolved by downgrading to `constraintlayout = "2.1.4"` in
+  `libs.versions.toml`
+
+**Status:** In progress — `LoginActivity.kt` next
+
+**To-Do:**
+- Add Firebase Auth backend logic to `LoginActivity.kt`
+- Wire navigation to open correct activities on Sign In, Google Sign-In, and Create one
+- Fix link formatting for footer and "Forgot password?" click targets
