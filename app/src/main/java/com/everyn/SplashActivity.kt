@@ -85,7 +85,9 @@ class SplashActivity : AppCompatActivity() {
     }
     private fun onSignInClicked()
     {
-        //Add code to add sign in button
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
 }
