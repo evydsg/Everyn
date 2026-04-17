@@ -1,5 +1,6 @@
 package com.everyn
 
+import android.app.ComponentCaller
 import android.content.Intent
 import android.os.Bundle
 import android.text.SpannableString
@@ -18,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
+import androidx.activity.result.contract.ActivityResultContracts
 
 class LoginActivity : AppCompatActivity() {
 
@@ -50,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
     private fun setupClickListeners() {
         //Email/password sign-in
         binding.btnSignIn.setOnClickListener {
-            if (validateInputs) {
+            if (validateInputs()) {
                 signInWithEmail()
             }
         }
@@ -125,6 +127,70 @@ class LoginActivity : AppCompatActivity() {
                     showToast("Sign-in failed: ${task.exception?.message}")
                 }
             }
+    }
+
+    private fun sendPasswordReset(email: String){
+        auth.sendPasswordResetEmail(email)
+            .addOnCompleteListener {
+                task ->
+                if(task.isSuccessful){
+                    showToast("Reset email sent - check your inbox")
+                } else{
+                    showToast("Failed to send reset email: ${task.exception?.message}")
+                }
+            }
+    }
+
+    //Google SignIn
+    // Register the launcher once at the top of the class (outside onCreate)
+    private val googleSignInLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
+        try {
+            val account = task.getResult(ApiException::class.java)
+            // TODO: Pass account.idToken to Firebase Auth in auth session
+            showToast("Google Sign-In successful — Firebase wiring coming soon")
+        } catch (e: ApiException) {
+            showToast("Google Sign-In failed: ${e.message}")
+        }
+    }
+
+    // Then simplify signInWithGoogle to use the launcher
+    private fun signInWithGoogle() {
+        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestIdToken(getString(R.string.default_web_client_id))
+            .requestEmail()
+            .build()
+
+        val googleSignInClient = GoogleSignIn.getClient(this, gso)
+        googleSignInLauncher.launch(googleSignInClient.signInIntent)
+    }
+
+    //Vaidation
+    private fun validateInputs(): Boolean{
+        val email = binding.etEmail.text.toString().trim()
+        val password = binding.etPassword.text.toString()
+
+        //Email must be valid format
+        if (TextUtils.isEmpty(email) || !Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            binding.etEmail.error = "Enter a valid email address"
+            binding.etEmail.requestFocus()
+            return false
+        }
+
+        if (TextUtils.isEmpty(password)){
+            binding.etPassword.error = "Enter your password"
+            binding.etPassword.requestFocus()
+            return false
+        }
+
+        return true
+    }
+
+    //Helpers
+    private fun showToast(message: String){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
 }

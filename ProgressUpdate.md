@@ -167,7 +167,7 @@ Completed `activity_login.xml` and resolved a build error.
 - Wire navigation to open correct activities on Sign In, Google Sign-In, and Create one
 - Fix link formatting for footer and "Forgot password?" click targets
 
-### Session — April 10, 2026
+### Session — April 9, 2026
 
 **Login Screen (S-03 Login) — In Progress**
 
@@ -178,6 +178,25 @@ Began implementation of `LoginActivity.kt`.
 - Wired navigation from Splash Screen to `LoginActivity`
 
 **Status:** In progress — validation, Firebase Auth sign-in logic, and footer
+Spannable link remaining
+
+**To-Do:**
+- Complete Firebase Auth email/password sign-in logic
+- Wire navigation to open correct activities on Sign In, Google Sign-In, and Create one
+- Fix link formatting for footer and "Forgot password?" click targets
+
+### Session — April 16, 2026
+
+**Login Screen (S-03 Login) — In Progress**
+
+Refactored Google Sign-In to use the modern Activity Result API.
+
+- Replaced deprecated `startActivityForResult` / `onActivityResult` with
+  `registerForActivityResult` and `ActivityResultContracts.StartActivityForResult()`
+- Removed `RC_GOOGLE_SIGN` request code — no longer needed with the new API
+- Added `ActivityResultContracts` import
+
+**Status:** In progress — Firebase Auth email/password sign-in logic and footer
 Spannable link remaining
 
 **To-Do:**
